@@ -1,103 +1,158 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ポートフォリオ</title>
+		<link rel="stylesheet" href="css/sanitize.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
-    <link rel="stylesheet" href="css/sanitize.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+	<body>
+		<div class="container">
+			<!-- ナビゲーションバー -->
+			<header>
+				<h1>ポートフォリオ</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">自己紹介</a></li>
+						<li><a href="project.html">プロジェクト</a></li>
+						<li><a href="contact.html">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</header>
 
-<body>
-    <div class="container">
-        <!-- ナビゲーションバー -->
-        <header>
-            <h1>ポートフォリオ</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">自己紹介</a></li>
-                    <li><a href="project.html">プロジェクト</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
+			<section id="projects">
+				<h2>プロジェクト</h2>
+				<!-- mogitate プロジェクト -->
+				<div class="project">
+					<h3>mogitate</h3>
+					<img
+						src="images/mogitate-project.png"
+						alt="mogitate プロジェクト画像"
+					/>
+					<p>
+						ECサイトをテーマにしたスクール課題で、商品の一覧表示や詳細管理機能などを備えたWebアプリケーションを開発しました。
+					</p>
+					<p>
+						LaravelのMVC構造やルーティング設計を意識し、短期間での高品質な実装を目指しました。検索・並び替え・ページネーションなどの機能を組み込んで、実用性の高いUIを実現しました。
+					</p>
+					<p>
+						<strong>使用技術：</strong>PHP / Laravel / MySQL /
+						Tailwind CSS
+					</p>
+					<p><strong>開発期間：</strong>1週間</p>
+					<p>
+						<strong>評価：</strong
+						>S判定（スクールより優秀作品として高評価）
+					</p>
+					<p><strong>主な機能：</strong></p>
+					<ul>
+						<li>商品一覧表示（6件ずつのページネーション）</li>
+						<li>商品名検索（部分一致対応）</li>
+						<li>価格による並び替え（高い順・安い順）</li>
+						<li>モーダルによる並び替え条件の表示・解除</li>
+						<li>
+							商品詳細ページでの編集・削除・バリデーション対応
+						</li>
+						<li>画像アップロード（ローカル対応）</li>
+					</ul>
+					<a
+						href="https://github.com/kozu-ike/freshly-picked"
+						target="_blank"
+						aria-label="GitHub リポジトリ"
+						>GitHub リポジトリ</a
+					>
+				</div>
 
-        <section id="projects">
-            <h2>プロジェクト</h2>
-<!-- mogitate プロジェクト -->
-<div class="project">
-    <h3>mogitate</h3>
-    <img src="images/mogitate-project.png" alt="mogitate プロジェクト画像">
-    <p>ECサイトをテーマにしたスクール課題で、商品の一覧表示や詳細管理機能などを備えたWebアプリケーションを開発しました。</p>
-    <p>LaravelのMVC構造やルーティング設計を意識し、短期間での高品質な実装を目指しました。検索・並び替え・ページネーションなどの機能を組み込んで、実用性の高いUIを実現しました。</p>
-    <p><strong>使用技術：</strong>PHP / Laravel / MySQL / Tailwind CSS</p>
-    <p><strong>開発期間：</strong>1週間</p>
-    <p><strong>評価：</strong>S判定（スクールより優秀作品として高評価）</p>
-    <p><strong>主な機能：</strong></p>
-    <ul>
-        <li>商品一覧表示（6件ずつのページネーション）</li>
-        <li>商品名検索（部分一致対応）</li>
-        <li>価格による並び替え（高い順・安い順）</li>
-        <li>モーダルによる並び替え条件の表示・解除</li>
-        <li>商品詳細ページでの編集・削除・バリデーション対応</li>
-        <li>画像アップロード（ローカル対応）</li>
-    </ul>
-    <a href="https://github.com/kozu-ike/freshly-picked" target="_blank" aria-label="GitHub リポジトリ">GitHub リポジトリ</a>
-</div>
+				<!-- フリマアプリ プロジェクト -->
+				<div class="project">
+					<h3>フリマアプリ</h3>
+					<img
+						src="images/freemarket-app.png"
+						alt="フリマアプリ プロジェクト画像"
+					/>
+					<p>
+						実際のサービスを想定し、出品・購入・プロフィール編集・レビューなどの機能を備えたフリマアプリを開発しました。
+					</p>
+					<p>
+						ユーザー認証やRESTful
+						API、Stripeによる決済、Mailtrapによるメール認証機能を通して、フルスタックの開発スキルを強化しました。UI/UXも直感的に使えるよう意識しました。
+					</p>
+					<p>
+						<strong>使用技術：</strong>PHP / Laravel / MySQL /
+						Tailwind CSS / Stripe / Mailtrap / Fortify / FormRequest
+					</p>
+					<p><strong>開発期間：</strong>2ヶ月（うち1ヶ月で完成）</p>
+					<p>
+						<strong>評価：</strong>S判定（高い完成度を評価される）
+					</p>
+					<p><strong>主な機能：</strong></p>
+					<ul>
+						<li>ユーザー登録／ログイン（Fortify + メール認証）</li>
+						<li>
+							商品一覧・詳細・検索（商品名検索、カテゴリ・状態の表示）
+						</li>
+						<li>
+							商品出品・画像アップロード（複数カテゴリ・商品状態選択）
+						</li>
+						<li>「いいね」機能、コメント投稿・表示</li>
+						<li>
+							商品購入（Stripe決済／支払方法選択／配送先変更）
+						</li>
+						<li>プロフィール編集（画像、ユーザー名、住所変更）</li>
+					</ul>
+					<a
+						href="https://github.com/kozu-ike/flea-market-app"
+						target="_blank"
+						aria-label="GitHub リポジトリ"
+						>GitHub リポジトリ</a
+					>
+				</div>
 
-<!-- フリマアプリ プロジェクト -->
-<div class="project">
-    <h3>フリマアプリ</h3>
-    <img src="images/freemarket-app.png" alt="フリマアプリ プロジェクト画像">
-    <p>実際のサービスを想定し、出品・購入・プロフィール編集・レビューなどの機能を備えたフリマアプリを開発しました。</p>
-    <p>ユーザー認証やRESTful API、Stripeによる決済、Mailtrapによるメール認証機能を通して、フルスタックの開発スキルを強化しました。UI/UXも直感的に使えるよう意識しました。</p>
-    <p><strong>使用技術：</strong>PHP / Laravel / MySQL / Tailwind CSS / Stripe / Mailtrap / Fortify / FormRequest</p>
-    <p><strong>開発期間：</strong>2ヶ月（うち1ヶ月で完成）</p>
-    <p><strong>評価：</strong>S判定（高い完成度を評価される）</p>
-    <p><strong>主な機能：</strong></p>
-    <ul>
-        <li>ユーザー登録／ログイン（Fortify + メール認証）</li>
-        <li>商品一覧・詳細・検索（商品名検索、カテゴリ・状態の表示）</li>
-        <li>商品出品・画像アップロード（複数カテゴリ・商品状態選択）</li>
-        <li>「いいね」機能、コメント投稿・表示</li>
-        <li>商品購入（Stripe決済／支払方法選択／配送先変更）</li>
-        <li>プロフィール編集（画像、ユーザー名、住所変更）</li>
-    </ul>
-    <a href="https://github.com/kozu-ike/flea-market-app" target="_blank" aria-label="GitHub リポジトリ">GitHub リポジトリ</a>
-</div>
+				<!-- 勤怠管理アプリ プロジェクト -->
+				<div class="project">
+					<h3>勤怠管理アプリ</h3>
+					<img
+						src="images/time-attendance-management.png"
+						alt="勤怠管理アプリ プロジェクト画像"
+					/>
+					<p>
+						打刻管理、修正申請、承認など実務を想定した勤怠管理システムを開発しました。
+					</p>
+					<p>
+						Fortifyによる認証、FormRequestによるバリデーション、管理者と一般ユーザーの権限分離を設計し、堅牢かつ実用的なWebアプリを構築しました。
+					</p>
+					<p>
+						<strong>使用技術：</strong>PHP / Laravel / MySQL /
+						Tailwind CSS / Mailtrap / Fortify / FormRequest
+					</p>
+					<p>
+						<strong>開発期間：</strong
+						>約3週間（予定より大幅に前倒し）
+					</p>
+					<p><strong>評価：</strong>S判定（スクール評価で高評価）</p>
+					<p><strong>主な機能：</strong></p>
+					<ul>
+						<li>ユーザー登録／ログイン／メール認証（Mailtrap）</li>
+						<li>出勤／退勤／休憩（複数対応）</li>
+						<li>勤怠一覧（月別／日別）、打刻ステータス管理</li>
+						<li>修正申請・承認機能（ユーザー ⇄ 管理者）</li>
+						<li>CSV出力機能、UI制御（権限ごと）</li>
+						<li>詳細なバリデーションとエラーメッセージ表示</li>
+					</ul>
+					<a
+						href="https://github.com/kozu-ike/time-attendance-management.git"
+						target="_blank"
+						aria-label="GitHub リポジトリ"
+						>GitHub リポジトリ</a
+					>
+				</div>
+			</section>
 
-<!-- 勤怠管理アプリ プロジェクト -->
-<div class="project">
-    <h3>勤怠管理アプリ</h3>
-    <img src="images/time-attendance-management.png" alt="勤怠管理アプリ プロジェクト画像">
-    <p>打刻管理、修正申請、承認など実務を想定した勤怠管理システムを開発しました。</p>
-    <p>Fortifyによる認証、FormRequestによるバリデーション、管理者と一般ユーザーの権限分離を設計し、堅牢かつ実用的なWebアプリを構築しました。</p>
-    <p><strong>使用技術：</strong>PHP / Laravel / MySQL / Tailwind CSS / Mailtrap / Fortify / FormRequest</p>
-    <p><strong>開発期間：</strong>約3週間（予定より大幅に前倒し）</p>
-    <p><strong>評価：</strong>S判定（スクール評価で高評価）</p>
-    <p><strong>主な機能：</strong></p>
-    <ul>
-        <li>ユーザー登録／ログイン／メール認証（Mailtrap）</li>
-        <li>出勤／退勤／休憩（複数対応）</li>
-        <li>勤怠一覧（月別／日別）、打刻ステータス管理</li>
-        <li>修正申請・承認機能（ユーザー ⇄ 管理者）</li>
-        <li>CSV出力機能、UI制御（権限ごと）</li>
-        <li>詳細なバリデーションとエラーメッセージ表示</li>
-    </ul>
-    <a href="https://github.com/kozu-ike/time-attendance-management.git" target="_blank" aria-label="GitHub リポジトリ">GitHub リポジトリ</a>
-</div>
-
-
-
-        </section>
-
-
-        <footer>
-            <p>© 2025 松尾小朱衣</p>
-        </footer>
-    </div>
-
-</body>
-
+			<footer>
+				<p>© 2025 松尾小朱衣</p>
+			</footer>
+		</div>
+	</body>
 </html>
